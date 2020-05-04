@@ -10,7 +10,7 @@ Além de realizar a leitura dos sensores mencionados acima, o mesmo efetua o aci
 - LED Infravermelho para acionar condicionador de AR conforme a regra obtida de um webservice
 - Speaker para informar que a luz está acesa
 
-## Modos de operação do sistema bare-metal
+## Modos de operação do sistema
 Modo Configuração:
 Ao ligar o dispositivo com o sistema em execução, deve ser pressionado o botão de configuração, para entrar
 no modo de configuração. Esse modo disponibiliza um webserver, onde o usuário poderá adicionar o dispositivo
