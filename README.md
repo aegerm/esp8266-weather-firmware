@@ -1,7 +1,7 @@
-# Weather Firmware
+### Weather Firmware
 Este projeto foi desenvolvido utilizando C++ com o framework PlatformIO.
 
-## Objetivo do firmware
+### Objetivo do firmware
 Esse firmware tem como função ser embarcado em um dispositivo ESP8266 e realizar leituras dos sequintes sensores:
 - Sensor de Luminosidade LDR (Light Dependent Resistor)
 - Sensor de Temperatura\Umidade DHT22
@@ -10,7 +10,7 @@ Além de realizar a leitura dos sensores mencionados acima, o mesmo efetua o aci
 - LED Infravermelho para acionar condicionador de AR conforme a regra obtida de um webservice
 - Speaker para informar que a luz está acesa
 
-## Modos de operação do sistema
+### Modos de operação do sistema
 Modo Configuração:
 Ao ligar o dispositivo com o sistema em execução, deve ser pressionado o botão de configuração, para entrar
 no modo de configuração. Esse modo disponibiliza um webserver, onde o usuário poderá adicionar o dispositivo
@@ -23,7 +23,28 @@ Nesse modo o dispositivo será adicionado na rede WiFi e iniciará o processo de
 desses dados para um webservice que tem como função salvar essas informações em uma base de dados. O dispositivo aceita receber "regras"
 para acionar os seus atuadores, de um sistema web, a leitura é realizada por meio de um JSON.
 
-## Objetivo do projeto
+### Objetivo do projeto
 - Monitorar e controlar ambientes
 - Automatizar e emitir alertas para usuários por meio do envio de alarmes
 - Possibilidade de geração de relatórios
+
+### Iniciando
+- Microsoft Visual Studio Code
+- Plugin PlatformIO
+- PlatformIO CLI
+
+### Pós Instalação de Ferramentas
+- Executar instalação da plataforma ESP32 ou ESP8266
+- Instalar via CLI as seguintes libs:
+- DHT sensor library
+- Adafruit Unified Sensor
+- ArduinoJson
+- IRremoteESP8266
+- Demais informações de versão das libs encontram-se no arquivo platformio.ini
+- Conectar ESP8266 ou ESP32, definir baud rate e embarcar o firmware
+
+### Documentação e Ferramentas utilizadas
+- https://code.visualstudio.com/
+- https://platformio.org/
+- https://platformio.org/install/cli
+- https://platformio.org/lib
